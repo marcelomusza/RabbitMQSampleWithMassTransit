@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3.8.0-management-alpine"
+    container_name: rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  rabbitmqsample:
+    container_name: publisher1
+    build:
+      context: .
+      dockerfile: RabbitMQSample/Dockerfile
+
+  rabbitreceiver1:
+    container_name: consumer1
+    build:
+      context: .
+      dockerfile: RabbitReceiver1/Dockerfile
+
+  rabbitreceiver2:
+    container_name: consumer2
+    build:
+      context: .
+      dockerfile: RabbitReceiver2/Dockerfile
+
