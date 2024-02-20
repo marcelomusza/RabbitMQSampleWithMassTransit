@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "RabbitMQSample": {
+    "RabbitMQSampleWithMassTransit": {
       "commandName": "Project"
     },
     "Docker": {

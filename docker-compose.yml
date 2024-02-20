@@ -12,17 +12,17 @@ services:
     container_name: publisher1
     build:
       context: .
-      dockerfile: RabbitMQSample/Dockerfile
+      dockerfile: PublisherConsoleApp/Dockerfile
 
   rabbitreceiver1:
     container_name: consumer1
     build:
       context: .
-      dockerfile: RabbitReceiver1/Dockerfile
+      dockerfile: ConsumerConsoleApp1/Dockerfile
 
   rabbitreceiver2:
     container_name: consumer2
     build:
       context: .
-      dockerfile: RabbitReceiver2/Dockerfile
+      dockerfile: ConsumerConsoleApp2/Dockerfile     
 

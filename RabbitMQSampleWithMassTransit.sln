@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQSample", "RabbitMQSample\RabbitMQSample.csproj", "{DCC309A8-74F5-4A4D-80C3-DAFC1E86D3E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublisherConsoleApp", "PublisherConsoleApp\PublisherConsoleApp.csproj", "{DCC309A8-74F5-4A4D-80C3-DAFC1E86D3E5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitReceiver1", "RabbitReceiver1\RabbitReceiver1.csproj", "{B106ECED-B2F2-4319-A711-9C9FBA5038C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsoleApp1", "ConsumerConsoleApp1\ConsumerConsoleApp1.csproj", "{B106ECED-B2F2-4319-A711-9C9FBA5038C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitReceiver2", "RabbitReceiver2\RabbitReceiver2.csproj", "{DFC27935-0FA8-489A-A507-BDBCFF1EE6F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsoleApp2", "ConsumerConsoleApp2\ConsumerConsoleApp2.csproj", "{DFC27935-0FA8-489A-A507-BDBCFF1EE6F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7C612FE-C9ED-4812-9208-7D2C165503E0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19880A74-3D31-44A7-994A-ACE772A59A36}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AC92CE7A-1CD0-4FE0-A264-7E4055F65F3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedContracts", "..\SharedContracts\SharedContracts.csproj", "{EE2A5059-CBA9-444E-B6C7-270648CF1703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{AC92CE7A-1CD0-4FE0-A264-7E4055F65F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC92CE7A-1CD0-4FE0-A264-7E4055F65F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC92CE7A-1CD0-4FE0-A264-7E4055F65F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2A5059-CBA9-444E-B6C7-270648CF1703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2A5059-CBA9-444E-B6C7-270648CF1703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2A5059-CBA9-444E-B6C7-270648CF1703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2A5059-CBA9-444E-B6C7-270648CF1703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{DCC309A8-74F5-4A4D-80C3-DAFC1E86D3E5} = {D7C612FE-C9ED-4812-9208-7D2C165503E0}
 		{B106ECED-B2F2-4319-A711-9C9FBA5038C0} = {D7C612FE-C9ED-4812-9208-7D2C165503E0}
 		{DFC27935-0FA8-489A-A507-BDBCFF1EE6F6} = {D7C612FE-C9ED-4812-9208-7D2C165503E0}
+		{EE2A5059-CBA9-444E-B6C7-270648CF1703} = {D7C612FE-C9ED-4812-9208-7D2C165503E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAAC7F22-F68A-4449-9F8D-BFA3587FEFB1}
