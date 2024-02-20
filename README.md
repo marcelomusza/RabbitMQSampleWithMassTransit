@@ -1,12 +1,13 @@
-# RabbitMQSample
+# RabbitMQSample with MassTransit
 
 ## Overview
-This repository contains a .NET solution demonstrating a basic publisher/subscriber pattern using RabbitMQ as a message broker. It includes three console applications: one publisher and two consumers, all dockerized with Docker Compose.
+This repository contains a .NET solution demonstrating a basic publisher/subscriber pattern using MassTransit and RabbitMQ. It includes three console applications: one publisher and two consumers, all dockerized with Docker Compose.
 
 ## Project Structure
-- Publisher: A .NET console application for publishing messages to RabbitMQ.
-- Consumer1: A .NET console application consuming messages from RabbitMQ.
-- Consumer2: Another .NET console app that consumes messages from RabbitMQ.
+- PublisherConsoleApp: A .NET console application for publishing messages to RabbitMQ using MassTransit.
+- ConsumerConsoleApp1: A .NET console application consuming messages from RabbitMQ using MassTransit.
+- ConsumerConsoleApp12: Another .NET console app that consumes messages from RabbitMQ using MassTransit.
+- SharedContracts: a Class library to hold the contracts to be used on the other projects, to reduce tight coupling among projects. 
 - Dockerfiles for containerizing the applications.
 - docker-compose.yml for orchestrating the services with RabbitMQ.
 
